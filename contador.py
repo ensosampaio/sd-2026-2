@@ -1,12 +1,14 @@
 import threading, time
 
 total = 0
+lock = threading.Lock()
 def soma_muitas():
     global total
     for _ in range(2000):
-        atual = total
-        time.sleep(0)
-        total = atual + 1
+        with lock:
+            atual = total
+            time.sleep(0)
+            total = atual + 1
 
 ts = [threading.Thread(target=soma_muitas) for _ in range(2)]
 
