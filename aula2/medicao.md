@@ -1,0 +1,3 @@
+<h1>Resultado dos testes:<h1>
+<break><break>
+<p>Tanto para o envio <strong>TCP<strong>, no qual é esperado o envio e recebimento do pacote inteiro e o reenvio em caso de perda, quanto para o <strong>UDP<strong>, no qual os pacotes são enviados rapidamente, podendo ocorrer a perda de pacote, o tempo de envio de 100 mensagens foi de <strong>8.5 milissegundos<strong>. <break> Uma explicação possivel para isso pode ser a quantidade pequena de pacotes enviados e a comunicação direta entre placa de rede/placa mãe sem passar por roteadores externos!
