@@ -24,7 +24,7 @@ _sym_db = _symbol_database.Default()
 
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\rservico.proto\x12\x0b\x63\x61lculadora\"!\n\tOperandos\x12\t\n\x01\x61\x18\x01 \x01(\x05\x12\t\n\x01\x62\x18\x02 \x01(\x05\"\x1a\n\tResultado\x12\r\n\x05valor\x18\x01 \x01(\x05\x32\x46\n\x0b\x63\x61lculadora\x12\x37\n\x05Somar\x12\x16.calculadora.Operandos\x1a\x16.calculadora.Resultadob\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\rservico.proto\x12\x0b\x63\x61lculadora\"!\n\tOperandos\x12\t\n\x01\x61\x18\x01 \x01(\x05\x12\t\n\x01\x62\x18\x02 \x01(\x05\"\x1a\n\tResultado\x12\r\n\x05valor\x18\x01 \x01(\x05\x32\xfc\x01\n\x0b\x63\x61lculadora\x12\x37\n\x05Somar\x12\x16.calculadora.Operandos\x1a\x16.calculadora.Resultado\x12=\n\x0bMultiplicar\x12\x16.calculadora.Operandos\x1a\x16.calculadora.Resultado\x12\x39\n\x07\x44ividir\x12\x16.calculadora.Operandos\x1a\x16.calculadora.Resultado\x12:\n\x08\x44iminuir\x12\x16.calculadora.Operandos\x1a\x16.calculadora.Resultadob\x06proto3')
 
 _globals = globals()
 _builder.BuildMessageAndEnumDescriptors(DESCRIPTOR, _globals)
@@ -35,6 +35,6 @@ if not _descriptor._USE_C_DESCRIPTORS:
   _globals['_OPERANDOS']._serialized_end=63
   _globals['_RESULTADO']._serialized_start=65
   _globals['_RESULTADO']._serialized_end=91
-  _globals['_CALCULADORA']._serialized_start=93
-  _globals['_CALCULADORA']._serialized_end=163
+  _globals['_CALCULADORA']._serialized_start=94
+  _globals['_CALCULADORA']._serialized_end=346
 # @@protoc_insertion_point(module_scope)

@@ -4,6 +4,9 @@ package calculadora;
 
 service calculadora{
     rpc Somar (Operandos) returns (Resultado);
+    rpc Multiplicar (Operandos) returns (Resultado);
+    rpc Dividir (Operandos) returns (Resultado);
+    rpc Diminuir (Operandos) returns (Resultado);
 }
 
 message Operandos {

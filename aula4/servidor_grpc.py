@@ -5,6 +5,12 @@ import servico_pb2, servico_pb2_grpc
 class CalculadoraServicer(servico_pb2_grpc.calculadoraServicer):
     def Somar(self, request, context):
         return servico_pb2.Resultado(valor=request.a + request.b)
+    def Multiplicar(self, request, context):
+        return servico_pb2.Resultado(valor=request.a * request.b)
+    def Dividir(self, request, context):
+        return servico_pb2.Resultado(valor=request.a // request.b)
+    def Diminuir(self, request, context):
+        return servico_pb2.Resultado(valor=request.a - request.b)
 
 
 servidor = grpc.server(futures.ThreadPoolExecutor(max_workers=10))

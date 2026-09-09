@@ -1,0 +1,3 @@
+# Alterações no Contrato Protobuf
+
+O Protobuf serializa dados em binário usando números de tag e tipos estritos, e os stubs em Python expõem getters e classes baseados nesses nomes. Alterar o tipo corrompe a decodificação da mensagem ou causa erros de validação em tempo de execução, enquanto renomear campos quebra o acesso aos atributos no código que ainda usa os stubs antigos. Por isso, alterar o contrato exige recompilar o `.proto` no cliente e no servidor para que ambos compartilhem as mesmas definições de serialização e interfaces de código.
